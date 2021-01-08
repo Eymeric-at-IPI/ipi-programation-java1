@@ -16,11 +16,18 @@ public class ArticleExportCVSService {
 
     public void export(PrintWriter writer) {
 
+        writer.println("ID;Libelle;Prix;Stock");
+
         List<Article> articles = articleRepository.findAll();
+        for( Article article : articles ) {
+            String desc = "";
+            desc += article.getId().toString() + ";";
+            desc += article.getLibelle() + ";";
+            desc += article.getPrix() + ";";
+            desc += article.getStock();
 
-        writer.println("Hello;World");
-        writer.println("guten tag");
+            writer.println(desc);
+        }
     }
-
 
 }
