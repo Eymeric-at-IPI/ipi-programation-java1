@@ -64,3 +64,9 @@ utiliser une datasource XML
 
 PS :
 Ajouter des bordures, des images, des polices, des couleurs, du gras souligné etc...
+
+
+
+# NOTE
+
+HomeController : ajouter une liste de client
